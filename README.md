@@ -4,7 +4,7 @@ A simple demo (in Scala and Java) of how to use the IBM Watson Document Conversi
 
 # Running demo
 
- 1. Make sure you have sbt [installed][sbt-install].
+ 1. Make sure you have sbt [installed][sbt-install]. (Also, make sure you run sbt using Java 8.)
  1. Replace `<username>` and `<password>` in `com.ibm.dcs.example.SingleConversion` with
     your Service Credentials from BlueMix.
  1. `sbt run com.ibm.dcs.example.SingleConversion`
