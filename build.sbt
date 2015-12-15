@@ -10,3 +10,8 @@ libraryDependencies ++= Seq(
   "com.ibm.watson.developer_cloud" % "java-sdk" % "2.1.0",
   "com.typesafe" % "config" % "1.3.0"
 )
+
+// Test dependencies
+libraryDependencies ++= Seq(
+  "org.scalatest" %% "scalatest" % "2.2.4" % "test"
+)
