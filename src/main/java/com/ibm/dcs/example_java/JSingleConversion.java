@@ -17,13 +17,15 @@ import com.ibm.watson.developer_cloud.document_conversion.v1.DocumentConversion;
 
 import java.io.File;
 
+import static com.ibm.dcs.Environment.DEFAULT;
+
 public class JSingleConversion {
 
     public static void main(String[] args) {
         File book = new File("alices_adventures_in_wonderland.pdf");
 
         DocumentConversion service = new DocumentConversion();
-        service.setUsernameAndPassword("<username>", "<password>");
+        service.setUsernameAndPassword(DEFAULT.getUsername(), DEFAULT.getPassword());
 
         String text = service.convertDocumentToText(book);
 
